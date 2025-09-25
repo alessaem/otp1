@@ -12,7 +12,7 @@ pipeline{
         stage('build'){
             steps{
                 cd Timecal
-                mvn clean install
+                bat 'mvn clean install'
             }
         }
         stage('Test') {
